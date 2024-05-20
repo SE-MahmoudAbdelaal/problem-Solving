@@ -5,10 +5,7 @@ class Solution {
         int numberofpow=s.length()-2;
         int firstDigit=(int)Math.pow(div, numberofpow);
         int lastDigit=x%10;
-
-
-
-
+        
         if (firstDigit==lastDigit) {
             return true;
             
