@@ -8,6 +8,7 @@ class Solution {
             m++;
             counter++;
         }
+        
         for (int i = 0; i <nums1.length ; i++) {
             for (int j = i+1; j <nums1.length ; j++) {
                 int tempValue=0;
