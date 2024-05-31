@@ -4,17 +4,13 @@ import java.util.LinkedHashSet;
 
 class Solution {
     public int removeDuplicates(int[] nums) {
-        LinkedHashSet<Integer> hashSet=new LinkedHashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            hashSet.add(nums[i]);     
-        }
-        int index=0;
-        for (Integer hasset : hashSet) {
-            nums[index]=hasset;
-            index++;
+        int index=1;
+    for (int i = 1; i < nums.length; i++) {
+        if (nums[i]!=nums[i-1]) {
+            nums[index++]=nums[i];
             
         }
-        return index;
-        
+    }
+    return index;
     }
 }
